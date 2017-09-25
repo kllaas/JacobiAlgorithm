@@ -1,4 +1,4 @@
-package JacobiAlgorithm;
+package JacobiAlgorithm.core;
 
 /**
  * Created by alexey on 24.09.17.

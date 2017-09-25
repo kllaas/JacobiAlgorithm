@@ -1,4 +1,4 @@
-package JacobiAlgorithm;
+package JacobiAlgorithm.core;
 
 import java.io.File;
 import java.io.FileNotFoundException;

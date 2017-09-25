@@ -1,11 +1,14 @@
 package JacobiAlgorithm;
 
+import JacobiAlgorithm.core.Algorithm;
+import JacobiAlgorithm.core.MatrixUtils;
+
 /**
  * Created by alexey on 24.09.17.
  */
-public class Main {
+public class Example {
 
-    private static final String FILENAME = "/home/alexey/Programming/Projects/Iteliji/JacobiMethod/src/JacobiAlgorithm/input.txt";
+    private static final String FILENAME = "";
     private static final double e = 0.00001;
 
     private static double[][] I;
