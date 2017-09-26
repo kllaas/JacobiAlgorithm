@@ -8,10 +8,8 @@ import JacobiAlgorithm.core.MatrixUtils;
  */
 public class Example {
 
-    private static final String FILENAME = "";
+    private static final String FILENAME = "/home/alexey/Programming/Projects/Iteliji/JacobiMethod/src/JacobiAlgorithm/input.txt";
     private static final double e = 0.00001;
-
-    private static double[][] I;
 
     public static void main(String[] args) {
         double[][] matrix = MatrixUtils.readMatrix(FILENAME);

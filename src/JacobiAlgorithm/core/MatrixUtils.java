@@ -48,9 +48,9 @@ public class MatrixUtils {
 
         double[][] C = new double[aRows][bColumns];
 
-        for (int i = 0; i < aRows; i++) { // aRow
-            for (int j = 0; j < bColumns; j++) { // bColumn
-                for (int k = 0; k < aColumns; k++) { // aColumn
+        for (int i = 0; i < aRows; i++) {
+            for (int j = 0; j < bColumns; j++) {
+                for (int k = 0; k < aColumns; k++) {
                     C[i][j] += A[i][k] * B[k][j];
                 }
             }
@@ -61,8 +61,8 @@ public class MatrixUtils {
 
 
     public static double[][] multiplyToNum(double[][] A, double number) {
-        for (int i = 0; i < A.length; i++) { // aRow
-            for (int j = 0; j < A[0].length; j++) { // bColumn
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[0].length; j++) {
                 A[i][j] *= number;
             }
         }
@@ -103,13 +103,13 @@ public class MatrixUtils {
         return result;
     }
 
-    public static double[][] getColumn(double[][] eigenVectors, int i) {
-        double [][] column = new double[eigenVectors[0].length][1];
+    public static double[][] getColumn(double[][] matrix, int i) {
+        double [][] column = new double[matrix[0].length][1];
 
         int c = 0;
 
-        while (c < eigenVectors.length) {
-            column[c][0] = eigenVectors[c][i];
+        while (c < matrix.length) {
+            column[c][0] = matrix[c][i];
             c++;
         }
 
